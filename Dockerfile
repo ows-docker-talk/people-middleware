@@ -7,5 +7,5 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install nodejs -y
 COPY . .
 RUN npm i
-EXPOSE 3000
+EXPOSE 3001
 CMD [ "npm", "start" ]
