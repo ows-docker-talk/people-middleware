@@ -10,6 +10,6 @@ app.get('/people', async (req, res) => {
   res.send(response);
 });
 
-app.listen(3000, () => {
+app.listen(3001, () => {
   console.log('Server listening on port 3000');
 });

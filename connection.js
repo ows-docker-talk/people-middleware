@@ -20,9 +20,7 @@ class MysqlConnection {
   async runQuery(query) {
     debugger;
     const doQuery = promisify(this.connection.query.bind(this.connection));
-    this.connection.connect();
     const result = await doQuery(query);
-    this.connection.end();
 
     return result;
   }
